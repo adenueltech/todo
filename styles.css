@@ -1,0 +1,189 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #232526;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #232526;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.animated-button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+}
+
+.dark-mode .animated-button {
+    background-color: #ffd700;
+    color: #333;
+}
+
+.dark-mode .animated-button:hover {
+    background-color: #ffa500;
+}
+
+.light-mode .animated-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.light-mode .animated-button:hover {
+    background-color: #0056b3;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .list-group-item {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.dark-mode .list-group-item:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.light-mode .list-group-item {
+    background: #ffffff;
+    color: #232526;
+}
+
+.light-mode .list-group-item:hover {
+    background: #f8f9fa;
+}
+
+.date-time {
+    margin-top: 20px;
+}
+
+.calendar-container {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    color: #ffffff;
+}
+
+#calendar div {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dark-mode #calendar div {
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.light-mode #calendar div {
+    background: #f8f9fa;
+    color: #232526;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ffd700;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.delete-btn:hover {
+    color: #ffa500;
+    transform: scale(1.2);
+}
+
+.light-mode .delete-btn {
+    color: #007bff;
+}
+
+.light-mode .delete-btn:hover {
+    color: #0056b3;
+}
+
+.favorite-btn {
+    background: none;
+    border: none;
+    color: #ffd700;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    margin-right: 10px;
+}
+
+.favorite-btn:hover {
+    color: #ffa500;
+    transform: scale(1.2);
+}
+
+.light-mode .favorite-btn {
+    color: #007bff;
+}
+
+.light-mode .favorite-btn:hover {
+    color: #0056b3;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+}
